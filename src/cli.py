@@ -9,7 +9,7 @@ from pathlib import Path
 import sys
 from typing import Sequence
 
-from parser import Document, ParseError, read_document
+from parser import Document, ParseError, normalize_heading, read_document
 from sync import SyncConflictError, SyncError, SyncRule, apply_plan, build_plan
 
 
@@ -94,6 +94,22 @@ def _check(args: argparse.Namespace) -> int:
                         "line": link.location.line,
                     }
                 )
+                continue
+            if "#" in link.destination:
+                anchor = link.destination.split("#", 1)[1]
+                target_document = next((item for item in documents if item.path == target), None)
+                if target_document is not None and not any(
+                    heading.anchor == normalize_heading(anchor) for heading in target_document.headings
+                ):
+                    diagnostics.append(
+                        {
+                            "rule_id": "DOCSYNC-ANCHOR",
+                            "severity": "error",
+                            "message": f"Missing heading anchor: {link.destination}",
+                            "file": str(document.relative_path),
+                            "line": link.location.line,
+                        }
+                    )
     diagnostics.sort(key=lambda item: (str(item.get("file", "")), int(item.get("line", 0)), str(item["rule_id"])))
     result = {"status": "failed" if diagnostics else "passed", "files_scanned": len(documents), "diagnostics": diagnostics}
     if args.json:
