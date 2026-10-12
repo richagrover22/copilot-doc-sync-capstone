@@ -1,0 +1,7 @@
+{
+  "key": "CAPSTONEP-25",
+  "summary": "Build Task Manager Application with Agentic SDLC Sync",
+  "status": "In Progress",
+  "assignee": "Richa Grover",
+  "description": "Implement enterprise-grade task manager application with automated documentation sync and multi-agent pipeline validation."
+}
