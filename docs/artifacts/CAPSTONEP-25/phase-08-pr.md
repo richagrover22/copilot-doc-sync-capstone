@@ -6,7 +6,8 @@
 - Title: `CAPSTONEP-25: Build single-user task manager with SDLC artifacts`
 - Base branch: `main`
 - Head branch: `feature/CAPSTONEP-25-task-manager`
-- Status: PR creation authorized; URL pending.
+- Head commit: `88ab3cc1bbe0c1c806a126d3576a31b532d41f3d`
+- Status: Branch pushed; PR not created because an authenticated GitHub create path was unavailable.
 
 ## Proposed Description
 
@@ -31,4 +32,8 @@
 
 ## Pull Request Link
 
-Pending creation.
+No PR exists yet. [Open the compare page to create it](https://github.com/richagrover22/copilot-doc-sync-capstone/compare/main...feature/CAPSTONEP-25-task-manager?expand=1).
+
+## Blocker
+
+The GitHub PR-write tool rejected the create request during parameter-header validation, GitHub CLI is not installed, and the integrated browser session is not authenticated. The branch is pushed and ready for PR creation.
