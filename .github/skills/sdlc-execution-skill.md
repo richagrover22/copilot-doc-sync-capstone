@@ -1,10 +1,6 @@
 # Skill: Enterprise SDLC Orchestration & Quality Verification
 
 ## Description
-Provides structured step-by-step guidance for executing Jir[200~cat << 'EOF' > .github/skills/sdlc-execution-skill.md
-# Skill: Enterprise SDLC Orchestration & Quality Verification
-
-## Description
 Provides structured step-by-step guidance for executing Jira-driven requirements analysis, architecture design, code implementation, automated testing, security review, and PR creation.
 
 ## Core Capabilities
