@@ -4,8 +4,8 @@
   "current_phase": "Phase 08",
   "last_updated_phase": "Phase 08",
   "last_updated": "2026-10-29",
-  "blocked_reason": "GitHub MCP PR creation returned Permission Denied: Unauthorized: As an Enterprise Managed User, you cannot access this content. No open PR matched the requested head/base. The account restriction requires human intervention under .github/error-handling.md.",
-  "note": "Phases 01-07 remain completed. On 2026-10-29, retried direct GitHub MCP PR creation for richagrover22/copilot-doc-sync-capstone from feature/MDP-7-task-manager into main after the user updated github_token_new. The matching open-PR lookup returned an empty list; creation was denied with an Enterprise Managed User restriction. No PR was created. Use an account authorized for this repository or consult the enterprise administrator before retrying. No token values were read or displayed. Application tests and phase hooks were not rerun by this retry.",
+  "blocked_reason": "GitHub MCP PR creation returned HTTP 422 Validation Failed: must be a collaborator. No open PR matched the requested head/base. Repository collaborator access is required before retrying.",
+  "note": "Phases 01-07 remain completed. On 2026-10-29, retried direct GitHub MCP PR creation for richagrover22/copilot-doc-sync-capstone from feature/MDP-7-task-manager into main after the user reported updating github_token_new2. The matching open-PR lookup returned an empty list; creation failed with HTTP 422 and must be a collaborator. No PR was created. Use a credential belonging to the repository owner or an authorized collaborator, or have the owner grant access to the account used by MCP. No token values were read or displayed, and the active account was not verified. Application tests and phase hooks were not rerun by this retry.",
   "phases": {
     "phase_01": "COMPLETED",
     "phase_02": "COMPLETED",
