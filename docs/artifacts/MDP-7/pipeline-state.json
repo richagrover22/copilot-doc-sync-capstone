@@ -5,7 +5,7 @@
   "last_updated_phase": "Phase 08",
   "last_updated": "2026-10-29",
   "blocked_reason": "GitHub MCP PR creation returned HTTP 422 Validation Failed: must be a collaborator. No open PR matched the requested head/base. Repository collaborator access is required before retrying.",
-  "note": "Phases 01-07 remain completed. On 2026-10-29, retried direct GitHub MCP PR creation for richagrover22/copilot-doc-sync-capstone from feature/MDP-7-task-manager into main after the user reported updating github_token_new2. The matching open-PR lookup returned an empty list; creation failed with HTTP 422 and must be a collaborator. No PR was created. Use a credential belonging to the repository owner or an authorized collaborator, or have the owner grant access to the account used by MCP. No token values were read or displayed, and the active account was not verified. Application tests and phase hooks were not rerun by this retry.",
+  "note": "Phases 01-07 remain completed. On 2026-10-29, retried direct GitHub MCP PR creation for richagrover22/copilot-doc-sync-capstone from feature/MDP-7-task-manager into main after the user reported configuring a dynamic token prompt. The matching open-PR lookup returned an empty list; creation again failed with HTTP 422 and must be a collaborator. No PR was created. Use a credential belonging to the repository owner or an authorized collaborator, or have the owner grant access to the account used by MCP. No token values were read or displayed; the active account and whether a fresh token prompt occurred were not verified. Application tests and phase hooks were not rerun by this retry.",
   "phases": {
     "phase_01": "COMPLETED",
     "phase_02": "COMPLETED",

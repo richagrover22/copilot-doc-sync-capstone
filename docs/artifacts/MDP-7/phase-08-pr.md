@@ -36,9 +36,9 @@ No MDP-7 PR was created. GitHub MCP returned no open PR matching `richagrover22:
 
 ## Retry Checkpoint (2026-10-29)
 
-- User authorized branch, commit, push, and PR creation against `main` and reported updating the `github_token_new2` input.
+- User authorized branch, commit, push, and PR creation against `main` and most recently reported configuring a dynamic token prompt.
 - The delegated orchestrator lacked the MCP loader; the parent session loaded GitHub MCP tools and retried directly.
-- The latest matching open-PR lookup returned an empty list. Direct PR creation then returned HTTP 422 `must be a collaborator`, replacing the earlier Enterprise Managed User restriction as the current blocker. No token values were read or displayed; the active account was not verified.
+- The latest matching open-PR lookup returned an empty list. Direct PR creation again returned HTTP 422 `must be a collaborator` after the reported dynamic-token configuration. No token values were read or displayed; the active account and whether a fresh token prompt occurred were not verified.
 - Phases 01-07 were skipped because they are completed. Application tests and phase hooks were not rerun by this retry.
 - No PR template was found by local filename search. The proposed description above preserves the previously recorded verification results; application tests were not rerun for this retry.
 - Unrelated `.github` and `.vscode` changes and CAPSTONEP-25 deletions were preserved.
